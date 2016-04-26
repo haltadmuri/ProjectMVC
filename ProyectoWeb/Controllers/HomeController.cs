@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace ProyectoWeb.Controllers
+{
+    public class HomeController : Controller
+    {
+        //toni
+        public ActionResult Index()
+        {
+            ViewBag.Message = "Modifique esta plantilla para poner en marcha su aplicación ASP.NET MVC.";
+
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            ViewBag.Message = "Página de descripción de la aplicación.";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Página de contacto.";
+
+            return View();
+        }
+    }
+}
