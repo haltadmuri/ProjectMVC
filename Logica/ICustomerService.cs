@@ -11,7 +11,7 @@ namespace Logica
     {
        
         Customer Add(Customer c);
-        void Delete(int c);
+        void Delete(int id);
         Customer Get(int id);
         void Update(int id,Customer customer);
         IEnumerable<Customer> GetAll(string name);

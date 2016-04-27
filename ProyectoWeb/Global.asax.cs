@@ -28,9 +28,7 @@ namespace ProyectoWeb
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
-            AutoFacConfig.Register(DependencyResolver.SetResolver);
-
-           
+            AutoFacConfig.Register(DependencyResolver.SetResolver);           
         }
     }
 }

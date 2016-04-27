@@ -10,13 +10,13 @@ namespace Infraestructura
 {
     public class CustomerDbContext: DbContext,ICustomerDbContext
     {
-        public DbSet<Customer> Customers { get; set; }
         public CustomerDbContext()
+            :base("DefaultConnection")
         {
-            var cadenaConexion = this.Database.Connection.ConnectionString;
 
         }
-
+        public DbSet<Customer> Customers { get; set; }
+        
 
     }
 }

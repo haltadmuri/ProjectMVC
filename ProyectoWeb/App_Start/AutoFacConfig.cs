@@ -23,7 +23,7 @@ namespace ProyectoWeb
             builder.RegisterModelBinders(typeof(MvcApplication).Assembly);
             builder.RegisterModule<AutofacWebTypesModule>();
 
-            builder.RegisterType<CustomerController>().As<Controller>().InstancePerHttpRequest();
+            
             builder.RegisterType<CustomerService>().As<ICustomerService>().InstancePerHttpRequest();
             builder.RegisterType<CustomerDbContext>().As<ICustomerDbContext>().InstancePerHttpRequest();
             //builder.RegisterType<Cliente>().InstancePerHttpRequest();

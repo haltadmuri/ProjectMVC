@@ -6,6 +6,9 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Autofac.Integration.WebApi;
+using MvcApplication1.Controllers;
+using MvcApplication1.App_Start;
 
 namespace MvcApplication1
 {
@@ -22,6 +25,7 @@ namespace MvcApplication1
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            AutofacWebApiConfig.RegisterAutofacApi();
         }
     }
 }
